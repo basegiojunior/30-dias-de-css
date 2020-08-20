@@ -1,0 +1,86 @@
+html {
+  background-color: #e7eff1;
+}
+
+body {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 50px;
+}
+
+.button:not(:last-child) {
+  margin-right: 60px;
+}
+
+.button span {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-25deg) skew(30deg);
+}
+
+.button:hover > span {
+  transition: 0.3s;
+  margin-top: -42px;
+}
+
+.button:not(:hover) > span {
+  transition: 0.3s;
+  margin-top: -50px;
+}
+
+.fa-facebook {
+  background-color: #1e71fe;
+  border: 2px solid #1450b6;
+}
+
+.fa-instagram {
+  background-color: #db2369;
+  border: 2px solid #a7194f;
+}
+
+.fa-twitter {
+  background-color: #00acee;
+  border: 2px solid #0080b3;
+}
+
+.fa:nth-child(1) {
+  opacity: 0.5;
+}
+
+.fa:nth-child(2) {
+  opacity: 0.6;
+}
+
+.fa:nth-child(3) {
+  opacity: 0.7;
+}
+
+.fa:nth-child(4) {
+  opacity: 0.8;
+}
+
+.fa:nth-child(5) {
+  opacity: 0.9;
+}
+
+.fa:nth-child(6) {
+  opacity: 1;
+}
