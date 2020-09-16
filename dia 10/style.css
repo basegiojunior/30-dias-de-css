@@ -1,0 +1,132 @@
+html {
+  background-color: rgb(215, 233, 205);
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+}
+
+@keyframes animation-left-subida {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(55deg);
+  }
+
+  100% {
+    transform: rotate(55deg);
+  }
+}
+
+@keyframes animation-left-descida {
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-55deg);
+  }
+
+  100% {
+    transform: rotate(-55deg);
+  }
+}
+
+@keyframes animation-right-subida {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-55deg);
+  }
+
+  100% {
+    transform: rotate(-55deg);
+  }
+}
+
+@keyframes animation-right-descida {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(55deg);
+  }
+}
+
+
+#apoio {
+  width: 300px;
+  height: 8px;
+  background-color: rgb(54, 54, 54);
+}
+
+#pendulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pendulo {
+  transform-origin: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pendulo-left {
+  animation: animation-left-subida 1s infinite ease-out;  
+}
+.pendulo-left-outside {
+  animation: animation-left-descida 1s infinite ease-in;  
+}
+
+.pendulo-right {
+  animation: animation-right-subida 1s infinite ease-out;  
+}
+
+.pendulo-right-outside {
+  animation: animation-right-descida 1s infinite ease-in;  
+}
+
+.line {
+  height: 200px;
+  width: 2px;
+  background-color: rgb(54, 54, 54);
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: rgb(54, 54, 54);
+}
+
