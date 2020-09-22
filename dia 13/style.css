@@ -1,0 +1,64 @@
+html {
+  background-color: rgb(215, 233, 205);
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text div {
+  overflow: hidden;
+}
+
+.text div h1 {
+  margin: 0;
+}
+
+.text-back {
+  z-index: 1;
+}
+
+.text-back h1 {
+  white-space: nowrap;
+  color: rgb(178, 189, 221);
+}
+
+.text-front {
+  z-index: 2;
+  width: 0;
+  transition: 0.5s;
+  transform: translateY(-56px);
+}
+
+.text-back:hover + .text-front {
+  width: 100%;
+}
+
+.text-front:hover {
+  width: 100%;
+}
+
+.text-front h1 {
+  white-space: nowrap;
+  color: rgb(7, 23, 77);
+}
